@@ -44,6 +44,11 @@ class CurvedNavBar extends StatefulWidget {
   /// when [actionButton] selected
   final Widget? actionBarView;
 
+  final double? height;
+
+  /// height [double] of navigation bar
+  /// [height] default value always [60.0]
+
   CurvedNavBar(
       {@required this.appBarItems,
       @required this.bodyItems,
@@ -52,6 +57,7 @@ class CurvedNavBar extends StatefulWidget {
       this.activeColor = Colors.black,
       this.inActiveColor = Colors.black26,
       this.navBarBackgroundColor = Colors.white,
+      this.height,
       this.actionBarView}) {
     assert(this.appBarItems != null);
     assert(this.bodyItems != null);
@@ -94,6 +100,7 @@ class _CurvedNavBarState extends State<CurvedNavBar> {
             bottomNavigationBar: FABBottomAppBar(
               centerItemText: widget.actionButton!.text ?? "",
               inActiveColor: widget.inActiveColor,
+              height: widget.height ?? 60.0,
               activeColor: widget.activeColor,
               notchedShape: CircularNotchedRectangle(),
               onTabSelected: (index) {

@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return CurvedNavBar(
+      height: 65,
       actionButton: CurvedActionBar(
           onTab: (value) {
             /// perform action here
