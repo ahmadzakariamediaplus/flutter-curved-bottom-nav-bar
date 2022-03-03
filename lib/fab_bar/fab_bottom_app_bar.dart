@@ -131,19 +131,16 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
         height: widget.height,
         child: Material(
           type: MaterialType.transparency,
-          child: InkWell(
-            onTap: () => onPressed!(index!),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                icon!,
-                Text(
-                  item.text!,
-                  style: TextStyle(color: color),
-                )
-              ],
-            ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              icon!,
+              Text(
+                item.text!,
+                style: TextStyle(color: color),
+              )
+            ],
           ),
         ),
       ),
