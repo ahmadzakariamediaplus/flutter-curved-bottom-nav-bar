@@ -101,7 +101,7 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
         height: widget.height,
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             // SizedBox(height: widget.iconSize),
             Text(
