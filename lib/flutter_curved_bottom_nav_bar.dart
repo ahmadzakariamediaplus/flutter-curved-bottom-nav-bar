@@ -99,6 +99,11 @@ class _CurvedNavBarState extends State<CurvedNavBar> {
                 FloatingActionButtonLocation.centerDocked,
             bottomNavigationBar: FABBottomAppBar(
               centerItemText: widget.actionButton!.text ?? "",
+              centerItemTextStyle: widget.actionButton?.textStyle ??
+                  TextStyle(
+                      color: isCentreSelected
+                          ? widget.activeColor
+                          : widget.inActiveColor),
               inActiveColor: widget.inActiveColor,
               height: widget.height ?? 60.0,
               activeColor: widget.activeColor,

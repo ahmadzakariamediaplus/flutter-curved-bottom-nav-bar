@@ -16,4 +16,7 @@ class CurvedActionBar {
 
   /// return [bool] value when [actionButton] selected
   final ValueChanged<bool>? onTab;
+
+  /// [TextStyle] for the [actionButton] text label
+  TextStyle? textStyle;
 }
