@@ -106,7 +106,7 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
             // SizedBox(height: widget.iconSize),
             Text(
               widget.centerItemText ?? '',
-              style: TextStyle(
+              style: widget.centerItemTextStyle ?? TextStyle(
                   color: widget.centerSelected
                       ? widget.activeColor
                       : widget.inActiveColor),
