@@ -142,7 +142,7 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
                 icon!,
                 Text(
                   item.text!,
-                  style: TextStyle(color: color),
+                  style: item.textStyle?.copyWith(color: color),
                 )
               ],
             ),

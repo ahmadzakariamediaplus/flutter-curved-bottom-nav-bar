@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FABBottomAppBarItem {
-  FABBottomAppBarItem({this.activeIcon, this.inActiveIcon, this.text}) {
+  FABBottomAppBarItem({this.activeIcon, this.inActiveIcon, this.text, this.textStyle}) {
     assert(this.activeIcon != null);
   }
 
@@ -13,4 +13,7 @@ class FABBottomAppBarItem {
 
   /// [Text] label of navigation bar item
   String? text;
+
+  /// [TextStyle] for the bar item text
+  TextStyle? textStyle;
 }
