@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CurvedActionBar {
-  CurvedActionBar({this.activeIcon, this.inActiveIcon, this.text, this.onTab}) {
+  CurvedActionBar(
+      {this.activeIcon,
+      this.inActiveIcon,
+      this.text,
+      this.onTab,
+      this.textStyle}) {
     assert(this.activeIcon != null);
   }
 
